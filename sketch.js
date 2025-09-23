@@ -78,10 +78,10 @@ function preload() {
   foodLines = loadStrings("food.txt");
   moreLines = loadStrings("more.txt");
   poem = loadSound(
-    "https://cdn.glitch.global/17810214-cd34-4bfb-bcbb-18640803286b/Boiling.m4a?v=1676092059313"
+    "Boiling.m4a"
   );
   bg = loadImage(
-    "https://cdn.glitch.global/17810214-cd34-4bfb-bcbb-18640803286b/IMG_1936.PNG?v=1675247709323"
+    "IMG_1936.PNG"
   );
 }
 
