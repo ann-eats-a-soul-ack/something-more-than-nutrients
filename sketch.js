@@ -116,7 +116,7 @@ function draw() {
   text('RIGHT 4 FAST', width - 170, 400);
 
   cursor(
-    "https://cdn.glitch.global/931200c8-4144-4934-bd23-9f5b3d3ec894/2426-24x24x32.png?v=1668040726182"
+    "2426-24x24x32.png"
   );
 
   for (var w = words.length - 1; w >= 0; w--) {
