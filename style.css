@@ -1,0 +1,14 @@
+
+html, body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width:100vw;
+  margin: 0;
+}
+canvas {
+  display: block;
+  
+}
+
