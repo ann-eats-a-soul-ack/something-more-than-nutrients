@@ -129,7 +129,7 @@ function draw() {
     //  }
   }
 
-  for (var i = 0; i < moreLines.length; i++) {
+  for (var i = 0; i < pLines.length; i++) {
     var shake = 0;
     if (mouseIsPressed) {
       shake = random(-10, 50);
@@ -144,15 +144,15 @@ function draw() {
     blur.textFont("Garamond");
     //blur.text(moreLines[i], x, 200 + i * 20);
     // blur/text(moreLines[i], 0, 0);
-    blur.text(moreLines[i], 350 + i + shake, pos + i * 20 + shake);
+    blur.text(pLines[i], 350 + i + shake, pos + i * 20 + shake);
   }
-  for (var i = 0; i < moreLines.length; i++) {
+  for (var i = 0; i < pLines.length; i++) {
     blur.fill(245, 222, 179, 10);
     blur.textAlign(LEFT);
     blur.textSize(25);
     //blur.text(moreLines[i], x, 200 + i * 20);
     // blur/text(moreLines[i], 0, 0);
-    blur.text(moreLines[i], 350, y + i * 20);
+    blur.text(pLines[i], 350, y + i * 20);
   }
   image(blur, 0, 0);
 
