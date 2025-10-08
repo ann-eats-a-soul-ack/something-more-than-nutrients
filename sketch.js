@@ -15,6 +15,7 @@ var y = [];
 var x = [];
 var foodLines;
 var moreLines;
+var pLines;
 var poem;
 var words = [];
 var wordFall = setInterval(makeWord, 100);
@@ -77,6 +78,7 @@ var restartText;
 function preload() {
   foodLines = loadStrings("food.txt");
   moreLines = loadStrings("more.txt");
+  pLines = loadStrings("panda.txt");
   poem = loadSound(
     "Boiling.m4a"
   );
@@ -155,7 +157,7 @@ function draw() {
   image(blur, 0, 0);
 
   // for (var t = 0; t < touches.length; t++) {
-  for (var i = 0; i < foodLines.length; i++) {
+  for (var i = 0; i < pLines.length; i++) {
     //if (mouseX > 200) {
     y = y - (mouseX / 1500) * 0.1;
 
@@ -173,7 +175,7 @@ function draw() {
     // fill(R, G, B);
     textFont("Garamond");
     textAlign(LEFT);
-    text(foodLines[i], 400 + shake, y + i * 20 + shake);
+    text(pLines[i], 400 + shake, y + i * 20 + shake);
     //text(foodLines[i], 100 + i + shake, pos + i * 20 + shake);
   }
   // }
